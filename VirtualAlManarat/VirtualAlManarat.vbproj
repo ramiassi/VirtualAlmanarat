@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F876B71F-D3A1-45C6-8ECA-AAB71007B34F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VirtualAlManarat</RootNamespace>
+    <AssemblyName>VirtualAlManarat</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>VirtualAlManarat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>VirtualAlManarat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\manDB.mdb">
+    </Content>
+    <Content Include="App_Themes\Theme1\CSS\style.css" />
+    <Content Include="App_Themes\Theme1\CSS\style.ie6.css" />
+    <Content Include="App_Themes\Theme1\CSS\style.ie7.css" />
+    <Content Include="App_Themes\Theme1\images\blockcontentbullets.png" />
+    <Content Include="App_Themes\Theme1\images\blockheader.png" />
+    <Content Include="App_Themes\Theme1\images\button.png" />
+    <Content Include="App_Themes\Theme1\images\DSCF0036.jpg" />
+    <Content Include="App_Themes\Theme1\images\DSCF0046.jpg" />
+    <Content Include="App_Themes\Theme1\images\DSCF2024.jpg" />
+    <Content Include="App_Themes\Theme1\images\footer.png" />
+    <Content Include="App_Themes\Theme1\images\footerbullets.png" />
+    <Content Include="App_Themes\Theme1\images\footer_b.png" />
+    <Content Include="App_Themes\Theme1\images\header-object.png" />
+    <Content Include="App_Themes\Theme1\images\header.png" />
+    <Content Include="App_Themes\Theme1\images\menuitem.png" />
+    <Content Include="App_Themes\Theme1\images\menuseparator.png" />
+    <Content Include="App_Themes\Theme1\images\nav.png" />
+    <Content Include="App_Themes\Theme1\images\post.png" />
+    <Content Include="App_Themes\Theme1\images\postauthoricon.png" />
+    <Content Include="App_Themes\Theme1\images\postbullets.png" />
+    <Content Include="App_Themes\Theme1\images\postcategoryicon.png" />
+    <Content Include="App_Themes\Theme1\images\postcommentsicon.png" />
+    <Content Include="App_Themes\Theme1\images\postdateicon.png" />
+    <Content Include="App_Themes\Theme1\images\postediticon.png" />
+    <Content Include="App_Themes\Theme1\images\postquote.png" />
+    <Content Include="App_Themes\Theme1\images\posttagicon.png" />
+    <Content Include="App_Themes\Theme1\images\post_b.png" />
+    <Content Include="App_Themes\Theme1\images\post_t.png" />
+    <Content Include="App_Themes\Theme1\images\preview.jpg" />
+    <Content Include="App_Themes\Theme1\images\rssicon.png" />
+    <Content Include="App_Themes\Theme1\images\sheet.png" />
+    <Content Include="App_Themes\Theme1\images\sheet_b.png" />
+    <Content Include="App_Themes\Theme1\images\sheet_t.png" />
+    <Content Include="App_Themes\Theme1\images\spacer.gif" />
+    <Content Include="App_Themes\Theme1\images\subitem.png" />
+    <Content Include="App_Themes\Theme1\images\vmenuitem.png" />
+    <Content Include="App_Themes\Theme1\images\vsubitem.png" />
+    <Content Include="App_Themes\Theme1\images\vsubitemicon.png" />
+    <Content Include="App_Themes\Theme1\JS\jquery.js" />
+    <Content Include="App_Themes\Theme1\JS\script.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.designer.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about.aspx.vb">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.vb">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.vb">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCategories.aspx.designer.vb">
+      <DependentUpon>AdminCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCategories.aspx.vb">
+      <DependentUpon>AdminCategories.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCourses.aspx.designer.vb">
+      <DependentUpon>AdminCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCourses.aspx.vb">
+      <DependentUpon>AdminCourses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDefault.aspx.designer.vb">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDefault.aspx.vb">
+      <DependentUpon>AdminDefault.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminStudentCourses.aspx.designer.vb">
+      <DependentUpon>AdminStudentCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminStudentCourses.aspx.vb">
+      <DependentUpon>AdminStudentCourses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUsers.aspx.designer.vb">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUsers.aspx.vb">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultStudent.aspx.designer.vb">
+      <DependentUpon>DefaultStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultStudent.aspx.vb">
+      <DependentUpon>DefaultStudent.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="payment.aspx.designer.vb">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.vb">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PrintPayment.aspx.designer.vb">
+      <DependentUpon>PrintPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintPayment.aspx.vb">
+      <DependentUpon>PrintPayment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="registeredCourses.aspx.designer.vb">
+      <DependentUpon>registeredCourses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="registeredCourses.aspx.vb">
+      <DependentUpon>registeredCourses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="showcategory.aspx.designer.vb">
+      <DependentUpon>showcategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showcategory.aspx.vb">
+      <DependentUpon>showcategory.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="showcategorystudent.aspx.designer.vb">
+      <DependentUpon>showcategorystudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showcategorystudent.aspx.vb">
+      <DependentUpon>showcategorystudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signup.aspx.designer.vb">
+      <DependentUpon>signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signup.aspx.vb">
+      <DependentUpon>signup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.vb">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student.Master.designer.vb">
+      <DependentUpon>Student.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Student.Master.vb">
+      <DependentUpon>Student.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.Master" />
+    <None Include="App_Themes\Theme1\images\Thumbs.db" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Admin\AdminCategories.aspx" />
+    <Content Include="Admin\AdminCourses.aspx" />
+    <Content Include="Admin\AdminDefault.aspx" />
+    <Content Include="Admin\AdminStudentCourses.aspx" />
+    <Content Include="Admin\AdminUsers.aspx" />
+    <Content Include="DefaultStudent.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="PrintPayment.aspx" />
+    <Content Include="registeredCourses.aspx" />
+    <Content Include="showcategorystudent.aspx" />
+    <Content Include="Student.Master" />
+    <Content Include="about.aspx" />
+    <Content Include="contactus.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="showcategory.aspx" />
+    <Content Include="signup.aspx" />
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1201</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
